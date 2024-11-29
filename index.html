@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS zadatak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Zadatak</h1>
+    <p>Nacrtati x elementa, gde je svaki sledeci svetliji, s tim da je prvi kompletno crn. Elementi u sebi treba da
+        imaju vrednost "Ja sam x. element" u kontrastnoj boji (crno-beloj) koja ce se videti. BONUS: da taj broj unese
+        korisnik kroz input polje</p>
+    <div class="input-wrap">
+        <div>
+            <input type="number" id="elementCount" placeholder="Uneti broj">
+            <button onclick="generateBlocks()">Generiši blokove</button>
+        </div>
+    </div>
+    <div id="container" class="flex-wrap">
+        <!-- <div class="flex-wrap--box">
+            <div class="flex-wrap--box-txt">Ja sam x. element: #ffffff</div>
+        </div> -->
+        <div class="flex-wrap--box"></div>
+    </div>
+</body>
+
+</html>
+<script src="script.js"></script>
