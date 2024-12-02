@@ -6,7 +6,7 @@ body {
     justify-content: center;
     -ms-flex-wrap: wrap !important;
     flex-wrap: wrap !important;
-    display: none;
+    display: flex;
 }
 
 .input-wrap {

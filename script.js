@@ -6,7 +6,6 @@ function generateBlocks() {
     containerDiv.innerHTML = ''; // Očisti prethodne blokove
     const halfCount = Math.floor(count / 2);
     for (let i = 0; i <= count; i++) {
-        containerDiv.style.display = "flex";
         const block = document.createElement('div');
         block.className = 'block flex-wrap--box';
         // Izračunavanje boje na osnovu indeksa
