@@ -2,7 +2,6 @@ body {
     text-align: center;
 }
 .flex-wrap {
-    display: flex; 
     align-items: center; 
     justify-content: center;
     -ms-flex-wrap: wrap !important;

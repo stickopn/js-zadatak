@@ -1,16 +1,17 @@
 'use strict'
 function generateBlocks() {
     const containerDiv = document.getElementById('container');
+    // parseInt() metoda pretvara string u tekst, ignorise decimale. Mada nije potrebna za koriscenje
     const count = parseInt(document.getElementById('elementCount').value);
     containerDiv.innerHTML = ''; // Očisti prethodne blokove
     const halfCount = Math.floor(count / 2);
     for (let i = 0; i <= count; i++) {
-        let maxLength = count.length;
         containerDiv.style.display = "flex";
         const block = document.createElement('div');
         block.className = 'block flex-wrap--box';
         // Izračunavanje boje na osnovu indeksa
         const shade = Math.floor(255 * (i / (count - 1))); // Od 0 do 255
+        // Math.floor() metoda zaokruzuje broj na celobrojnu vrednost, takodje nije neophodna
         block.style.backgroundColor = `rgb(${shade}, ${shade}, ${shade})`;
         if (i < halfCount) {
             block.style.color = "#ffffff";
