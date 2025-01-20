@@ -1,0 +1,92 @@
+html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background-color: #242431;
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cinema {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  
+  .cinema-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .seat {
+    flex: 1;
+    background: rgb(207 207 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-weight: 600;
+    min-height: 40px;
+  }
+  
+  .seat.selected {
+    flex: 1;
+    background: white !important;
+  }
+  
+  .seat.available {
+    background: #8cd9df !important;
+  }
+  
+  .seat.unavailable {
+    background: #434351 !important;
+    pointer-events: none;
+  }
+  
+  .seat.unavailable-bought {
+    background: #434351 !important;
+    pointer-events: none;
+  }
+  
+  .seat.bought {
+    background: #46b0b9 !important;
+    pointer-events: none;
+  }
+  
+  button {
+    width: fit-content;
+    border: 0;
+    background: #46b0b9;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin: 8px 0 8px 8px;
+    cursor: pointer;
+  }
+  
+  .cinema-screen-wrapper {
+    perspective: 1000px;
+  }
+  
+  .cinema-screen {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+  }
