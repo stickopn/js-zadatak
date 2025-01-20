@@ -138,6 +138,7 @@ function clickSeat() {
     // priceSelected();
 }
 
+
 function selectedCard() {
     const selectedElementsArray = Array.from(selectedElements);
     console.log('selektovani elementi click' + selectedElementsArray);
